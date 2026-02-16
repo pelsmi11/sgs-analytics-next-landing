@@ -229,11 +229,6 @@ export const ContactForm = () => {
               )}
               {isLoading ? t("submitting") : t("submit")}
             </button>
-            {isSuccess && (
-              <Button type="button" variant="outline" onClick={() => reset()}>
-                {t("sendAnother")}
-              </Button>
-            )}
           </div>
         </form>
       </Form>
