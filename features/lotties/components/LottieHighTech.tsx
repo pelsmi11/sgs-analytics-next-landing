@@ -7,7 +7,7 @@ export const LottieHighTech = (
   props: React.HTMLAttributes<HTMLDivElement> = {}
 ) => {
   const { lottieQuery } = useLottieQuery({
-    lottieUrl: "/Lotties/high_tech.json",
+    lottieUrl: "/Lotties/big_data.json",
   });
 
   const { data: animationData, isLoading, isError, error } = lottieQuery;
