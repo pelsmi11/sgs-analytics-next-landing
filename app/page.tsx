@@ -46,8 +46,7 @@ export default async function Home() {
             />
           </div>
         </section>
-        {/* Leadership & Delivery Team */}
-        <LeadershipAndDeliveryTeam />
+        
         
         {/* Consulting Hero */}
         <Consulting />
@@ -61,6 +60,17 @@ export default async function Home() {
         <CaseStudies />
         {/* CTA Section */}
         <HomeCTA />
+         {/* Certifications and Experience Carousels */}
+         <section className="py-16 md:py-24 bg-background text-foreground">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <AboutUsCarrousel
+              certifications={certifications}
+              experiences={experiences}
+            />
+          </div>
+        </section>
+        {/* Leadership & Delivery Team */}
+        <LeadershipAndDeliveryTeam />
       </main>
     </div>
   );

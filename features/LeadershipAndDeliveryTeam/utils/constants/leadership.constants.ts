@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Briefcase, Cpu, User } from "lucide-react";
+import { Briefcase, Cpu } from "lucide-react";
 
 export type TeamMemberRole = "ceo" | "lead" | "consultant";
 
@@ -16,6 +16,7 @@ export interface TeamMember {
   stack?: string; // For Hugo - tech stack
   icon: LucideIcon;
   photoUrl?: string;
+  linkedInUrl?: string;
 }
 
 const photosUrl = {
@@ -38,6 +39,7 @@ export const getTeamMembers = (t: (key: string) => string): TeamMember[] => [
     certifications: t("team.julio.certifications"),
     icon: Briefcase,
     photoUrl: photosUrl.julioMonterroso,
+    linkedInUrl: "https://www.linkedin.com/in/julio-monterroso-2a884b1ab/",
   },
   {
     id: "hugo",
@@ -56,5 +58,6 @@ export const getTeamMembers = (t: (key: string) => string): TeamMember[] => [
     english: "Fluent",
     icon: Cpu,
     photoUrl: photosUrl.hugoEstrada,
+    linkedInUrl: "https://www.linkedin.com/in/hugoestradas/",
   },
 ];

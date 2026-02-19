@@ -21,13 +21,13 @@
         "role": "CEO",
         "focus": "Comercial y estrategia",
         "skills": { "0": "Desarrollo de negocio", "1": "Alianzas estratégicas", "2": "Go-to-market" },
-        "certifications": "MBA, 15+ años en tech"
+        "certifications": "Statistics Master y Financial"
       },
       "hugo": {
         "role": "Lead Data/AI Engineer",
         "focus": "Arquitectura de datos, ML y IA",
         "skills": { "0": "Python • TensorFlow • PyTorch", "1": "Databricks • Spark • dbt", "2": "AWS • Azure • MLOps" },
-        "certifications": "AWS Solutions Architect, Azure Data Engineer",
+        "certifications": "AWS Solutions Architect, Azure Data Engineer, FinOps Master",
         "stack": "Python, TensorFlow, PyTorch, Databricks, Spark, dbt, AWS, Azure"
       },
       "maria": {
