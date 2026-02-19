@@ -1,9 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { CarouselConsulting } from "./CarouselConsulting";
 import { getAccordionItems } from "../utils/constants/consulting.constants";
-import { Button } from "@/components/ui/button";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 
 export const Consulting = () => {
   const t = useTranslations('consulting.powerBi');
@@ -28,9 +27,9 @@ export const Consulting = () => {
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
               {t('description')}
             </p>
-            <Button asChild size="lg" className="mt-4">
-              <Link href="/contact">{t('cta')}</Link>
-            </Button>
+            <ButtonGlow href="/contact" className="mt-4">
+              {t("cta")}
+            </ButtonGlow>
           </div>
 
           {/* Right Stats - 3 columns */}

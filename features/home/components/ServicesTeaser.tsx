@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { getAboutServices } from "@/features/aboutServices/utils/contants/aboutServices.constants";
 import { AboutService } from "@/features/aboutServices/interfaces";
@@ -9,7 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 
 export const ServicesTeaser = () => {
   const t = useTranslations('home.services');
@@ -69,9 +68,9 @@ export const ServicesTeaser = () => {
         </div>
 
         <div className="text-center">
-          <Button asChild size="lg">
-            <Link href="/services-consulting">{t('viewAll')}</Link>
-          </Button>
+          <ButtonGlow href="/services-consulting">
+            {t("viewAll")}
+          </ButtonGlow>
         </div>
       </div>
     </section>

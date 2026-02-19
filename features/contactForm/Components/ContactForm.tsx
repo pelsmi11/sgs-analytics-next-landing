@@ -11,21 +11,19 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+import { Input } from "@/components/ui/input";import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
-import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import { CheckCircle, AlertCircle } from "lucide-react";
 import { useContactForm, MESSAGE_MAX_LENGTH } from "../hooks/useContactForm";
 import { getContactTopics } from "../services/contactTopics.services";
-import styles from "./btnContact.module.css";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 import { cn } from "@/lib/utils";
 
 export const ContactForm = () => {
   const t = useTranslations("contact.form");
   const locale = useLocale();
-  const { form, onSubmit, isLoading, isSuccess, isError, error, reset } =
+  const { form, onSubmit, isLoading, isSuccess, isError, error } =
     useContactForm();
 
   const {
@@ -219,16 +217,9 @@ export const ContactForm = () => {
             }}
           />
           <div className="flex gap-4">
-            <button
-              type="submit"
-              disabled={isLoading}
-              className={styles.btnGlow}
-            >
-              {isLoading && (
-                <Loader2 className="h-4 w-4 animate-spin shrink-0" />
-              )}
+            <ButtonGlow type="submit" loading={isLoading}>
               {isLoading ? t("submitting") : t("submit")}
-            </button>
+            </ButtonGlow>
           </div>
         </form>
       </Form>

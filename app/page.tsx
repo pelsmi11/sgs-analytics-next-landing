@@ -48,8 +48,7 @@ export default async function Home() {
         </section>
         {/* Leadership & Delivery Team */}
         <LeadershipAndDeliveryTeam />
-        {/* case studies */}
-        <CaseStudies />
+        
         {/* Consulting Hero */}
         <Consulting />
 
@@ -58,7 +57,8 @@ export default async function Home() {
 
         {/* About Us Teaser */}
         <AboutUsTeaser />
-
+        {/* case studies */}
+        <CaseStudies />
         {/* CTA Section */}
         <HomeCTA />
       </main>

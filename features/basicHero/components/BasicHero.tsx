@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { LottieCustomProyecjt } from "@/features/lotties/components/LottieCustomProyecjt";
-import { Button } from "@/components/ui/button";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 import { CheckCircle } from "lucide-react";
 import { VideoHero } from "./VideoHero";
 
@@ -47,9 +46,9 @@ export const BasicHero = () => {
           </ul>
 
           <div>
-            <Button asChild size="lg" className="mt-4">
-              <Link href="/contact">{t('contactButton')}</Link>
-            </Button>
+            <ButtonGlow href="/contact" className="mt-4">
+              {t("contactButton")}
+            </ButtonGlow>
           </div>
         </article>
       </div>

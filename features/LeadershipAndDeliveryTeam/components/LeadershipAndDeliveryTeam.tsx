@@ -1,6 +1,5 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 import { getTeamMembers } from "../utils/constants/leadership.constants";
 import { TeamCard } from "./TeamCard";
 
@@ -41,9 +40,9 @@ export const LeadershipAndDeliveryTeam = () => {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <Button asChild size="lg" className="min-w-[180px]">
-            <Link href="/contact">{t("cta")}</Link>
-          </Button>
+          <ButtonGlow href="/contact" className="min-w-[180px]">
+            {t("cta")}
+          </ButtonGlow>
         </div>
       </div>
     </section>

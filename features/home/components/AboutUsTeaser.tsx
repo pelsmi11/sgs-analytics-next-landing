@@ -1,9 +1,8 @@
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
+import { ButtonGlow } from "@/features/custom-ui/components/ButtonGlow";
 
 export const AboutUsTeaser = () => {
-  const t = useTranslations('about');
+  const t = useTranslations("about");
   return (
     <section className="py-16 md:py-24 bg-muted/30 text-foreground">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,11 +25,9 @@ export const AboutUsTeaser = () => {
         </div>
 
         <div className="text-center">
-          <Button asChild size="lg" variant="outline">
-            <Link href="/about-us-experience">
-              {t('teaser.cta')}
-            </Link>
-          </Button>
+          <ButtonGlow href="/about-us-experience">
+            {t("teaser.cta")}
+          </ButtonGlow>
         </div>
       </div>
     </section>
