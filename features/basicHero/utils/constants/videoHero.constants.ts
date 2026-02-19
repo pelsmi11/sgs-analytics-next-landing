@@ -1,0 +1,1 @@
+export const urlVideoHero = "https://res.cloudinary.com/dyt42oe9i/video/upload/v1771466534/SgsPresentation_f9xw1f.mp4";

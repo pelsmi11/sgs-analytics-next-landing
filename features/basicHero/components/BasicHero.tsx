@@ -1,11 +1,15 @@
+"use client";
+
+import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { LottieCustomProyecjt } from "@/features/lotties/components/LottieCustomProyecjt";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Play } from "lucide-react";
+import { CheckCircle } from "lucide-react";
+import { VideoHero } from "./VideoHero";
 
 export const BasicHero = () => {
-  const t = useTranslations('hero');
+  const t = useTranslations("hero");
 
   const bullets = [
     t('bullets.usHours'),
@@ -50,16 +54,7 @@ export const BasicHero = () => {
         </article>
       </div>
 
-      {/* Video placeholder */}
-      <div className="mt-8 sm:mt-10 lg:mt-12">
-        <div className="relative w-full aspect-video max-w-4xl mx-auto rounded-lg overflow-hidden bg-muted/50 border border-border">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/90 text-primary-foreground shadow-lg transition-colors hover:bg-primary">
-              <Play className="h-8 w-8 ml-1" fill="currentColor" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <VideoHero />
     </section>
   );
 };
