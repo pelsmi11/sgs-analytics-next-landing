@@ -8,6 +8,7 @@ import {
 
 const populateParams = {
   populate: "*",
+  "pagination[pageSize]": 100,
 };
 
 export const getAboutUsExperience = async (): Promise<IAboutUsExperience[]> => {
