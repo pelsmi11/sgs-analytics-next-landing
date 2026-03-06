@@ -15,6 +15,11 @@ export const getNavigationLinks = (t: (key: string) => string) => [
     href: "/services-consulting",
   },
   {
+    id: "cloudex",
+    label: t("cloudex"),
+    href: "/cloudex",
+  },
+  {
     id: "contact",
     label: t("contact"),
     href: "/contact",

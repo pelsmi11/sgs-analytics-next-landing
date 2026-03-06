@@ -1,6 +1,7 @@
 import { BasicHero } from "@/features/basicHero";
 import { Consulting } from "@/features/consulting";
 import { ServicesTeaser, AboutUsTeaser, HomeCTA } from "@/features/home";
+import { CloudexBrandStrip } from "@/features/cloudex";
 import { AboutUsCarrousel } from "@/features/aboutUs/components/AboutUsCarrousel";
 import {
   getAboutUsCertification,
@@ -53,6 +54,9 @@ export default async function Home() {
 
         {/* Services Teaser */}
         <ServicesTeaser />
+
+        {/* CloudeX Brand Strip */}
+        <CloudexBrandStrip />
 
         {/* About Us Teaser */}
         <AboutUsTeaser />

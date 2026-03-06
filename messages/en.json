@@ -60,6 +60,7 @@
     "home": "Home",
     "aboutUs": "About Us",
     "services": "Services and Consulting",
+    "cloudex": "CloudeX",
     "contact": "Contact",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -383,6 +384,79 @@
     "error": {
       "lottieLoad": "Error loading animation:",
       "unknown": "Unknown error"
+    }
+  },
+  "cloudex": {
+    "mvpSection": {
+      "badge": "FinOps Platform",
+      "description": "The <strong>6 essential features</strong> to launch a FinOps platform with immediate value. Incremental delivery in <strong>3 sprints</strong> of 4 weeks, with measurable ROI from day 30.",
+      "sprint1Label": "Sprint 1",
+      "sprint1Desc": "Connectivity & Visibility",
+      "sprint1Status": "Active",
+      "sprint2Label": "Sprint 2",
+      "sprint2Desc": "Alerts & Optimization",
+      "sprint2Status": "Upcoming",
+      "sprint3Label": "Sprint 3",
+      "sprint3Desc": "Reports & Delivery",
+      "sprint3Status": "Planned"
+    },
+    "sprintCards": {
+      "badge": "6 MVP Modules",
+      "title": "Functional Scope",
+      "description": "Six essential modules distributed across three sprints for a FinOps platform with measurable ROI from the first month.",
+      "activeLabel": "Sprint 1 · Active",
+      "upcomingLabel": "Sprint 2 · Upcoming",
+      "futureLabel": "Sprint 3 · Planned",
+      "modules": {
+        "connector": {
+          "title": "Multi-Cloud Connector",
+          "description": "Unified ingestion from AWS · Azure · GCP via native APIs and Cost Explorer. Normalized cost database with hourly updates.",
+          "features": { "0": "AWS Cost Explorer + CUR", "1": "Azure Cost Management API", "2": "GCP Billing Export BigQuery", "3": "Single schema normalization" }
+        },
+        "dashboard": {
+          "title": "Executive Dashboard",
+          "description": "360° view of spending in real time. Key financial KPIs for CTO, CFO, and infrastructure teams in a single panel.",
+          "features": { "0": "Total spend vs. budget", "1": "Top 10 services by cost", "2": "Daily / weekly / monthly trends", "3": "Filters by project, tag, environment" }
+        },
+        "tags": {
+          "title": "Tag & Allocation Management",
+          "description": "Cost allocation engine by tag, team, product, or customer. First step for showback and organizational accountability.",
+          "features": { "0": "Mandatory tagging policies", "1": "Untagged resources: auto-detection", "2": "Allocation by rules or manual %", "3": "Tag coverage report" }
+        },
+        "alerts": {
+          "title": "Alerts & Basic Anomalies",
+          "description": "Threshold alerting system and statistical spike detection. Notifications to Slack, Teams, or email without friction.",
+          "features": { "0": "Alerts by % budget deviation", "1": "Spike detection with Z-score", "2": "Webhooks for Slack / MS Teams", "3": "Alert history and log" }
+        },
+        "recommendations": {
+          "title": "Optimization Recommendations",
+          "description": "Immediate savings engine: oversized instances, idle resources, and reservation opportunities. Prioritized by $ impact.",
+          "features": { "0": "Rightsizing EC2 / VMs / Compute", "1": "Idle resources > 7 days", "2": "Reserved vs. On-Demand analysis", "3": "Estimated savings per action" }
+        },
+        "reports": {
+          "title": "Automated Reports & Exports",
+          "description": "Automatic generation of PDF and Excel reports for management and clients. Monthly scheduling with customizable branding.",
+          "features": { "0": "Executive monthly PDF report", "1": "Detailed CSV / Excel export", "2": "Automatic email delivery", "3": "White-label branding per client" }
+        }
+      }
+    },
+    "roadmap": {
+      "badge": "Delivery Plan",
+      "title": "Sprint Roadmap",
+      "description": "12 weeks of incremental delivery with valuable features from sprint 1. Measurable ROI before completing the project.",
+      "phases": {
+        "1": { "label": "Connectivity & Visibility", "duration": "Weeks 1–4", "pills": { "0": "Cloud Connector", "1": "Dashboard", "2": "Tags" } },
+        "2": { "label": "Alerts & Optimization", "duration": "Weeks 5–8", "pills": { "0": "Anomalies", "1": "Alerts", "2": "Rightsizing" } },
+        "3": { "label": "Reports & Delivery", "duration": "Weeks 9–12", "pills": { "0": "Auto PDF", "1": "Exports", "2": "QA + Launch" } },
+        "4": { "label": "Proven Value", "duration": "From Day 30", "pills": { "0": "Visible ROI", "1": "Real savings" } }
+      },
+      "cta": "Request Live Demo",
+      "ctaSubtext": "We'll reply in less than 24h (US hours)"
+    },
+    "brandStrip": {
+      "badge": "New Product",
+      "tagline": "Multi-Cloud FinOps Platform · Visibility · Optimization · ROI from Day 30",
+      "cta": "View MVP CloudeX →"
     }
   },
   "metadata": {
