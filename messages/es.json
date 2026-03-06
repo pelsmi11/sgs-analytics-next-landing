@@ -60,6 +60,7 @@
     "home": "Inicio",
     "aboutUs": "Sobre nosotros",
     "services": "Servicios y Consultoría",
+    "cloudex": "CloudeX",
     "contact": "Contacto",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
@@ -383,6 +384,79 @@
     "error": {
       "lottieLoad": "Error al cargar la animación:",
       "unknown": "Error desconocido"
+    }
+  },
+  "cloudex": {
+    "mvpSection": {
+      "badge": "FinOps Platform",
+      "description": "Las <strong>6 funcionalidades esenciales</strong> para lanzar una plataforma FinOps de valor inmediato. Entrega incremental en <strong>3 sprints</strong> de 4 semanas, con ROI comprobable desde el día 30.",
+      "sprint1Label": "Sprint 1",
+      "sprint1Desc": "Conectividad & Visibilidad",
+      "sprint1Status": "Activo",
+      "sprint2Label": "Sprint 2",
+      "sprint2Desc": "Alertas & Optimización",
+      "sprint2Status": "Próximo",
+      "sprint3Label": "Sprint 3",
+      "sprint3Desc": "Reportes & Entrega",
+      "sprint3Status": "Planeado"
+    },
+    "sprintCards": {
+      "badge": "6 Módulos MVP",
+      "title": "Alcance Funcional",
+      "description": "Seis módulos esenciales distribuidos en tres sprints para una plataforma FinOps con ROI medible desde el primer mes.",
+      "activeLabel": "Sprint 1 · Activo",
+      "upcomingLabel": "Sprint 2 · Próximo",
+      "futureLabel": "Sprint 3 · Planeado",
+      "modules": {
+        "connector": {
+          "title": "Conector Multi-Cloud",
+          "description": "Ingesta unificada de AWS · Azure · GCP vía APIs nativas y Cost Explorer. Base de datos de costos normalizada y actualización horaria.",
+          "features": { "0": "AWS Cost Explorer + CUR", "1": "Azure Cost Management API", "2": "GCP Billing Export BigQuery", "3": "Normalización schema único" }
+        },
+        "dashboard": {
+          "title": "Dashboard Ejecutivo",
+          "description": "Vista 360° del gasto en tiempo real. KPIs financieros clave para CTO, CFO y equipos de infraestructura en un solo panel.",
+          "features": { "0": "Gasto total vs. presupuesto", "1": "Top 10 servicios por costo", "2": "Tendencia diaria / semanal / mensual", "3": "Filtros por proyecto, tag, entorno" }
+        },
+        "tags": {
+          "title": "Gestión de Tags & Allocations",
+          "description": "Motor de asignación de costos por etiqueta, equipo, producto o cliente. Primer paso para showback y accountability organizacional.",
+          "features": { "0": "Políticas de tagging obligatorias", "1": "Recursos sin tag: detección automática", "2": "Asignación por reglas o % manual", "3": "Reporte de cobertura de tags" }
+        },
+        "alerts": {
+          "title": "Alertas & Anomalías Básicas",
+          "description": "Sistema de alertas de umbral y detección estadística de spikes de gasto. Notificaciones a Slack, Teams o correo sin fricción.",
+          "features": { "0": "Alertas por % desviación del presupuesto", "1": "Spike detection con Z-score", "2": "Webhooks para Slack / MS Teams", "3": "Historial y log de alertas" }
+        },
+        "recommendations": {
+          "title": "Recomendaciones de Optimización",
+          "description": "Motor de ahorro inmediato: instancias sobredimensionadas, recursos inactivos y oportunidades de reserva. Priorizado por impacto $.",
+          "features": { "0": "Rightsizing EC2 / VMs / Compute", "1": "Recursos idle > 7 días", "2": "Reserved vs. On-Demand análisis", "3": "Savings estimado por acción" }
+        },
+        "reports": {
+          "title": "Reportes & Exports Automáticos",
+          "description": "Generación automática de reportes PDF y Excel para dirección y clientes. Programación mensual con branding personalizable.",
+          "features": { "0": "Reporte mensual PDF ejecutivo", "1": "Export CSV / Excel detallado", "2": "Envío automático por email", "3": "Branding white-label por cliente" }
+        }
+      }
+    },
+    "roadmap": {
+      "badge": "Plan de Entrega",
+      "title": "Roadmap de Sprints",
+      "description": "12 semanas de entrega incremental con funcionalidades de valor desde el sprint 1. ROI medible antes de completar el proyecto.",
+      "phases": {
+        "1": { "label": "Conectividad & Visibilidad", "duration": "Semanas 1–4", "pills": { "0": "Conector Cloud", "1": "Dashboard", "2": "Tags" } },
+        "2": { "label": "Alertas & Optimización", "duration": "Semanas 5–8", "pills": { "0": "Anomalías", "1": "Alertas", "2": "Rightsizing" } },
+        "3": { "label": "Reportes & Entrega", "duration": "Semanas 9–12", "pills": { "0": "PDF Auto", "1": "Exports", "2": "QA + Launch" } },
+        "4": { "label": "Valor Comprobable", "duration": "Desde Día 30", "pills": { "0": "ROI visible", "1": "Ahorros reales" } }
+      },
+      "cta": "Solicitar Demo en Vivo",
+      "ctaSubtext": "Te respondemos en menos de 24h (horario US)"
+    },
+    "brandStrip": {
+      "badge": "Nuevo Producto",
+      "tagline": "Plataforma FinOps Multi-Cloud · Visibilidad · Optimización · ROI desde el día 30",
+      "cta": "Ver MVP CloudeX →"
     }
   },
   "metadata": {

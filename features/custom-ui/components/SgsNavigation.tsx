@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import {
   NavigationMenu,
@@ -56,9 +57,32 @@ export const SgsNavigation = () => {
                   >
                     <Link
                       href={link.href}
-                      className="text-sm font-medium hover:text-primary transition-colors"
+                      className={
+                        link.logoImages
+                          ? "flex items-center"
+                          : "text-sm font-medium hover:text-primary transition-colors"
+                      }
                     >
-                      {link.label}
+                      {link.logoImages ? (
+                        <>
+                          <Image
+                            src={link.logoImages.dark}
+                            alt={link.label}
+                            width={120}
+                            height={36}
+                            className="hidden dark:block h-9 w-auto object-contain"
+                          />
+                          <Image
+                            src={link.logoImages.light}
+                            alt={link.label}
+                            width={120}
+                            height={36}
+                            className="block dark:hidden h-9 w-auto object-contain"
+                          />
+                        </>
+                      ) : (
+                        link.label
+                      )}
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
@@ -113,7 +137,26 @@ export const SgsNavigation = () => {
                         href={link.href}
                         className="px-4 py-3 rounded-lg hover:bg-accent hover:text-accent-foreground transition-colors text-left font-medium"
                       >
-                        {link.label}
+                        {link.logoImages ? (
+                          <>
+                            <Image
+                              src={link.logoImages.dark}
+                              alt={link.label}
+                              width={108}
+                              height={32}
+                              className="hidden dark:block h-8 w-auto object-contain"
+                            />
+                            <Image
+                              src={link.logoImages.light}
+                              alt={link.label}
+                              width={108}
+                              height={32}
+                              className="block dark:hidden h-8 w-auto object-contain"
+                            />
+                          </>
+                        ) : (
+                          link.label
+                        )}
                       </Link>
                     </DrawerClose>
                   ))}
