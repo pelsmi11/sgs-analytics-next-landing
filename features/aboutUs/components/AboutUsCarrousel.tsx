@@ -58,14 +58,14 @@ export const AboutUsCarrousel = ({
                 key={certification.id}
                 className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                <Card className="h-full">
-                  <CardContent className="flex flex-col items-center justify-center p-6 aspect-square">
-                    <div className="relative w-full h-full flex items-center justify-center">
+                <Card>
+                  <CardContent className="flex flex-col items-center p-6">
+                    <div className="relative w-full h-48">
                       <Image
                         src={certification.imageUrl}
                         alt={`${certification.provider} ${certification.name}`}
                         fill
-                        className="object-contain rounded-lg"
+                        className="object-contain"
                       />
                     </div>
                     <div className="mt-4 text-center">
@@ -110,14 +110,14 @@ export const AboutUsCarrousel = ({
                 key={company.id}
                 className="pl-2 md:pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
               >
-                <Card className="h-full">
-                  <CardContent className="flex items-center justify-center p-3 md:p-4 aspect-video">
-                    <div className="relative w-full h-full flex items-center justify-center">
+                <Card>
+                  <CardContent className="flex items-center justify-center p-4">
+                    <div className="relative w-full h-32">
                       <Image
                         src={company.logoUrl}
                         alt={company.company}
                         fill
-                        className="object-contain rounded-lg"
+                        className="object-contain"
                       />
                     </div>
                   </CardContent>
